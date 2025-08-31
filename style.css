@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 100%;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: auto;
+}
+.Flex {
+  display: flex;
+}
+
+.interface > .Flex {
+  gap: 60px;
+}
+
+h2.titulo_2 {
+  color: white;
+  font-size: 38px;
+  text-align: center;
+}
+h2.titulo_2 span {
+  color: rgb(35, 211, 35);
+}
+/*Estilo cabeçalho*/
+
+.logo img {
+  width: 100px;
+}
+
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  display: inline-block;
+  color: rgb(104, 101, 101);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+header a:hover {
+  color: white;
+  transform: scale(1.05);
+}
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.btn-contato button:hover {
+  box-shadow: 0px 0px 8px rgb(20, 241, 31);
+  transform: scale(1.05);
+}
+
+/*estilo do site*/
+section.topo-do-site {
+  padding: 50px 4%;
+}
+
+.img-topo-site img {
+  margin-left: 5%;
+}
+
+section .topo-do-site .Flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  color: white;
+  font-size: 42px;
+  line-height: 40px;
+}
+
+.topo-do-site h1 span {
+  color: #00ff08;
+}
+
+.txt-topo-site p {
+  color: white;
+  margin: 40px 0;
+}
+
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(3, 182, 182);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-contato button:hover {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(3, 182, 182);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+/* ESTILO DAS ESPECIALIDADES*/
+section .especialidades {
+  padding: 40px 4%;
+}
+
+.especialidades .especialidades-box {
+  color: white;
+  padding: 40px;
+  margin-top: 40px;
+  border-radius: 30px;
+  transition: 0.2s;
+}
+.especialidades .especialidades-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #bdbbbb;
+}
+
+.especialidades .especialidades-box i {
+  font-size: 70px;
+  color: #00ff08;
+}
+
+.especialidades .especialidades-box h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+/*ESTILO DO SOBRE*/
+section .sobre {
+  padding: 40px 4%;
+}
+
+.sobre {
+  margin-bottom: 40px;
+}
+.sobre .txt-sobre {
+  color: white;
+  justify-content: center;
+}
+
+.sobre .Flex {
+  align-items: center;
+  gap: 60px;
+}
+
+.txt-sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+  color: #00ff08;
+  display: block;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00ff08;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: 0.2s;
+}
+
+.sobre .txt-sobre .btn-social button:hover {
+  transform: scale(1.5);
+  box-shadow: 0px 0px 30px #00ff08;
+}
+
+.sobre {
+  margin-top: 30px;
+}
+
+/*MENU PORTFÓLIO*/
+
+section.portfólio {
+  padding: 60px 4%;
+}
+
+.img-port {
+  width: 360px;
+  height: 460px;
+  background-color: #00ff08;
+}
+
+section.portfólio.Flex {
+  justify-content: space-around;
+}
+
+section.portfólio h2 {
+  margin-bottom: 20px;
+}
+
+/* ESTILO DO FOOTER*/
+
+footer {
+  margin-top: 20px;
+  padding: 60px 4%;
+  box-shadow: 0 0 15px 2px rgb(66, 66, 66);
+}
+
+footer .Flex {
+  justify-content: space-between;
+}
+
+footer .line-footer {
+  padding: 20px 0;
+}
+
+.borda {
+  border-top: 2px solid #00ff08;
+}
+
+.btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00ff08;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: 0.2s;
+}
+
+footer .line-footer p i {
+  color: #00ff08;
+  font-size: 22px;
+}
+
+footer .line-footer p a {
+  color: white;
+}
